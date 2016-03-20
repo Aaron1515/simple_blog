@@ -1,4 +1,6 @@
-<%= form_for :article, url: articles_path do |f| %>
+<h1>Editing Article</h1>
+
+<%= form_for :article, url: article_path(@article), method: :patch do |f| %>
 
   <%= render partial: "errors" %>
 
